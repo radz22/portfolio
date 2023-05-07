@@ -1,0 +1,17 @@
+.footer{
+    background-color: #191717;
+    min-height: 10vh;
+    width: 100%;
+}
+
+.footer__name {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+@media screen and (max-width: 650px){
+    .footer__name .p__cormorant{
+        font-size: 20px;
+    }
+}

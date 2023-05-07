@@ -1,0 +1,110 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#031270;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+.navbar__links {
+    display: flex;
+    list-style: none;
+    flex: 1;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.navbar__links li a{
+    margin: 0 2rem;
+    cursor: pointer;
+   
+    
+}
+.navbar__links li a:hover{
+    width: 150px;
+    height: 120px;
+    background: #e00f0f;
+    border: 1px solid #e00f0f;
+    transition: 0.4s ease;
+    border-radius: 12px;
+    padding: 10px 15px;
+    
+}
+.navbar__github{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar__github img{
+    width: 120px;
+    cursor: pointer;
+}
+
+
+
+/* small screen*/
+
+.app__navbar-smallscreen{
+display: none;
+}
+
+.app__navbar-smallscreen .overlay__open{
+    cursor: pointer;
+}
+
+
+.app__navbar-smallscreen-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0C0C0C;
+    transition: 0.5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+}
+
+.app__navbar-smallscreen-overlay .overlay__close {
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.navbar-smallscreen_links {
+list-style: none;
+}
+
+.navbar-smallscreen_links li{
+    margin: 2rem;
+    cursor: pointer;
+    color:  #DCCA87;
+    font-size: 1.4rem;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.navbar-smallscreen__github img{
+    width: 200px;
+}
+
+@media screen and (max-width: 1050px) {
+   .navbar__links,
+   .navbar__github{
+    display: none;
+   }
+   
+   .app__navbar-smallscreen{
+    display: flex;
+   }
+
+  
+
+}

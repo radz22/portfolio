@@ -1,0 +1,96 @@
+.header{
+    /*background-color: #0C0C0C;*/
+    background: linear-gradient(181deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%);
+
+
+}
+
+
+
+.header__content p{
+    margin: .8rem 0px;
+    
+}
+
+ 
+.header__content span{
+color: #dd5014;
+font-weight: 400;
+}
+
+
+
+
+.header .app__wrapper_img img{
+    transform: translateY(0px);
+    animation: float 3.2s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+@media screen and (max-width: 1150px){
+    .header__name span{
+        font-size: 45px;
+    }
+
+    .app__wrapper_img img{
+        width: 100%;
+    }
+   
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .app__wrapper_img img{
+        width: 80%;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 650px) {
+    .header__name span{
+        font-size: 35px;
+    }
+
+    .header__content .p__cormorant span{
+        font-size: 21px;
+    }
+   
+}
+
+
+
+@media screen and (max-width: 450px){
+    .header__name span{
+        font-size: 25px;
+    }
+
+    .header__content .p__cormorant span{
+        font-size: 15px;
+    }
+
+    .header__content .p__cormorant {
+        font-size: 15px;
+    }
+}

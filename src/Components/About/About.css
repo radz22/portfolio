@@ -1,0 +1,128 @@
+.about {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+
+    
+}
+
+.about__me .headtext__cormorant h1{
+    color: black;
+
+}
+
+
+.about__images{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.about__images img{
+  max-width: 600px;
+  cursor: pointer;  
+}
+
+
+
+
+
+.about__images img{
+    transform: translateY(0px);
+    animation: float 3.2s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.about__content .about__me .p__opensans{
+    font-size: 20px;
+}
+
+
+.app__footer-links-icons{
+    margin-top: 0.5rem;
+    
+}
+
+.app__footer-links-icons svg{
+    color: #fff;
+    margin: 0.5rem;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #040000;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+  
+    
+  
+}
+
+
+
+/* media query*/
+
+
+@media screen and (max-width: 1150px){
+    .about__images img{
+    width: 400px;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about__images img{
+        width: 450px;
+        margin-bottom: 20px;
+}
+
+
+    .about__content .about__me .headtext__cormorant{
+        font-size: 45px;
+        
+    }
+    
+
+   
+}
+
+
+
+@media screen and (max-width: 450px){
+    .about__content .about__me .headtext__cormorant{
+        font-size: 40px;
+    }
+
+    .about__content .about__me span{
+        font-size: 15px;
+    }
+
+    .about__content .about__me .p__opensans{
+        font-size: 15px;
+    }
+
+    .about__images img{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: 120%;
+    }
+}

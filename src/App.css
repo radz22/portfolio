@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.custom__button {
+  background-color: #e00f0f;
+    color:#fff;
+    font-family: 'Cormorant Upright', serif;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.p__cormorant {
+  font-family: 'Open Sans', sans-serif;;
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  line-height: 29.9px;
+  font-size: 23px;
+}
+
+.p__opensans {
+  font-family: 'Cormorant Upright', serif;
+  color:#FFFFFF	;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 17px;
+}
+
+.headtext__cormorant {
+  font-family: 'Cormorant Upright', serif;
+  color:#FFFFFF;
+  font-size: 64px;
+  line-height: 83.2px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-weight:700;
+}
+
+
+.app__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.app__wrapper_info {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.app__wrapper_img {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+}
+
+.particles{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.app{
+  width: 100;
+  height: 100vh;
+}
+
+.app__wrapper_img img {
+  width: 80%;
+}
